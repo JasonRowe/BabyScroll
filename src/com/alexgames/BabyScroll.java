@@ -6,7 +6,7 @@ import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.*;
 
-public class BabyScroll extends  ListActivity  implements TextToSpeech.OnInitListener
+public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListener
 {
     TextToSpeech talker;
 
@@ -47,27 +47,27 @@ public class BabyScroll extends  ListActivity  implements TextToSpeech.OnInitLis
         
         String say = viewText;
         
-        if(viewText == "A")
+        if(viewText.equals("A"))
         {
             say = "AE is for Alex";
         }
-        else if(viewText == "B")
+        else if(viewText.equals("B"))
         {
             say = "B is for ball";
         }
-        else if(viewText == "C")
+        else if(viewText.equals("C"))
         {
             say = "C is for car";
         }
-        else if(viewText == "D")
+        else if(viewText.equals("D"))
         {
             say = "d is for daddy";
         }
-        else if(viewText == "M")
+        else if(viewText.equals("M"))
         {
             say = "m is for mommy";
         }
-        else if(viewText == "Z")
+        else if(viewText.equals("Z"))
         {
             say = "z is for zoo";
         }
