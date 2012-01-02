@@ -2,14 +2,19 @@ package com.alexgames;
 
 import android.app.ListActivity;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.*;
 
-public class BabyScroll extends  ListActivity
+public class BabyScroll extends  ListActivity  implements TextToSpeech.OnInitListener
 {
+    TextToSpeech talker;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        talker = new TextToSpeech(this, this);
 
         CircularArrayAdapter<String> adapter = new CircularArrayAdapter<String>(this, R.layout.list_item, ABCs);
         setListAdapter(adapter);
@@ -22,6 +27,7 @@ public class BabyScroll extends  ListActivity
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
+                TalkItem(view);
                 // When clicked, show a toast with the TextView text
                 Toast.makeText(getApplicationContext(), ((TextView) view).getText(),
                         Toast.LENGTH_SHORT).show();
@@ -34,4 +40,51 @@ public class BabyScroll extends  ListActivity
             "P","O","N","M","L","K","J","I","H","G","F",
             "E","D","C","B"
     };
+
+    private void TalkItem(View view)
+    {
+        String viewText = ((TextView) view).getText().toString();
+        
+        String say = viewText;
+        
+        if(viewText == "A")
+        {
+            say = "AE is for Alex";
+        }
+        else if(viewText == "B")
+        {
+            say = "B is for ball";
+        }
+        else if(viewText == "C")
+        {
+            say = "C is for car";
+        }
+        else if(viewText == "D")
+        {
+            say = "d is for daddy";
+        }
+        else if(viewText == "M")
+        {
+            say = "m is for mommy";
+        }
+        else if(viewText == "Z")
+        {
+            say = "z is for zoo";
+        }
+
+        talker.speak(say, TextToSpeech.QUEUE_FLUSH, null);
+    }
+
+    public void onInit(int status) {
+    }
+
+    @Override
+    public void onDestroy() {
+        if (talker != null) {
+            talker.stop();
+            talker.shutdown();
+        }
+
+        super.onDestroy();
+    }
 }
