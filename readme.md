@@ -7,14 +7,14 @@ Baby Scroll is a simple android application to learn the ABC's.
 
 * Letters are spoken when clicked.
 * Endles scrolling, when you get to Z it goes back to A.
-* Nothing much else
+* Background music
 
 ## Work in progress
 
-* Background music
-* images
-* number scrolling
+* add images
+* add animation
+* numbers
 
-### Everything else:
+### License:
 
 The Unlicense (aka: public domain)
