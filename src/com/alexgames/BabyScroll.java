@@ -4,13 +4,8 @@ import android.app.ListActivity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.view.*;
+import android.widget.*;
 
 import java.util.ArrayList;
 
@@ -46,6 +41,23 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
 
                 // When clicked, show a toast with the TextView text
                 View textView = view.findViewById(R.id.txtItem);
+
+                LayoutInflater inflater = getLayoutInflater();
+                View layout = inflater.inflate(R.layout.toast_layout,
+                        (ViewGroup) findViewById(R.id.toast_layout_root));
+
+                //TODO put in images
+                //ImageView image = (ImageView) layout.findViewById(R.id.image);
+                //image.setImageResource(R.drawable.dog);
+                TextView text = (TextView) layout.findViewById(R.id.text);
+                text.setText(((TextView) textView).getText());
+
+                Toast toast = new Toast(getApplicationContext());
+                toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.setView(layout);
+                toast.show();
+
                 Toast.makeText(getApplicationContext(), ((TextView) textView).getText(),
                         Toast.LENGTH_SHORT).show();
             }
@@ -106,8 +118,16 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
             say = "C car";
         } else if (viewText.equals("D")) {
             say = "d  daddy";
+        } else if (viewText.equals("E")) {
+            say = "e  elephant";
+        } else if (viewText.equals("F")) {
+            say = "f  firetruck";
+        } else if (viewText.equals("G")) {
+            say = "g  grandpa";
         } else if (viewText.equals("M")) {
             say = "m mommy";
+        } else if (viewText.equals("T")) {
+            say = "t tiger";
         } else if (viewText.equals("Z")) {
             say = "z zoo";
         }
