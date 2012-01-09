@@ -7,7 +7,12 @@ import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.*;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListener {
     TextToSpeech talker;
@@ -21,7 +26,11 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
 
         talker = new TextToSpeech(this, this);
 
-        CircularArrayAdapter<String> adapter = new CircularArrayAdapter<String>(this, R.layout.list_item, ABCs);
+        BabyScrollItemBuilder itemBuilder = new BabyScrollItemBuilder();
+        
+        ArrayList<BabyScrollItem> items = itemBuilder.GetAlphabetItems();
+
+        CircularArrayAdapter<BabyScrollItem> adapter = new CircularArrayAdapter<BabyScrollItem>(this, R.layout.list_item, items);
         setListAdapter(adapter);
 
         ListView lv = getListView();
@@ -47,12 +56,6 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
         final Window window = getWindow();
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
-
-    static final String[] ABCs = new String[]{
-            "A", "Z", "Y", "X", "W", "V", "U", "T", "S", "R", "Q",
-            "P", "O", "N", "M", "L", "K", "J", "I", "H", "G", "F",
-            "E", "D", "C", "B"
-    };
 
     public void onResume() {
         super.onResume();
@@ -93,17 +96,17 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
         String say = viewText;
 
         if (viewText.equals("A")) {
-            say = "AE is for Alex";
+            say = "AE Alex";
         } else if (viewText.equals("B")) {
-            say = "B is for ball";
+            say = "B ball";
         } else if (viewText.equals("C")) {
-            say = "C is for car";
+            say = "C car";
         } else if (viewText.equals("D")) {
-            say = "d is for daddy";
+            say = "d  daddy";
         } else if (viewText.equals("M")) {
-            say = "m is for mommy";
+            say = "m mommy";
         } else if (viewText.equals("Z")) {
-            say = "z is for zoo";
+            say = "z zoo";
         }
 
         talker.speak(say, TextToSpeech.QUEUE_FLUSH, null);
