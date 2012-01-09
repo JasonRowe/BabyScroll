@@ -30,7 +30,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/alexgames/BabyScroll.java" line="93" class="com.alexgames.BabyScroll" package="com.alexgames">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/alexgames/BabyScroll.java" line="96" class="com.alexgames.BabyScroll" package="com.alexgames">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -126,20 +126,10 @@
       <file leaf-file-name="BabyScroll.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/alexgames/BabyScroll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="20" selection-start="3197" selection-end="3197" vertical-scroll-proportion="1.251948">
+            <state line="46" column="68" selection-start="1532" selection-end="1532" vertical-scroll-proportion="0.4077922">
               <folding>
                 <element signature="e#962#978#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BabyScrollItemBuilder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/alexgames/BabyScrollItemBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#411#427#0" expanded="true" />
+                <element signature="method#TalkItem#0;class#BabyScroll#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -157,7 +147,7 @@
       <file leaf-file-name="CircularArrayAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/alexgames/CircularArrayAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0">
+            <state line="56" column="88" selection-start="1506" selection-end="1557" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,7 +198,7 @@
       <file leaf-file-name="list_item.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/list_item.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="56" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
+            <state line="11" column="57" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -243,7 +233,6 @@
         <option value="$PROJECT_DIR$/src/com/game/BabyScroll.java" />
         <option value="$PROJECT_DIR$/gen/com/alexgames/R.java" />
         <option value="$PROJECT_DIR$/src/com/alexgames/BabyScrollView.java" />
-        <option value="$PROJECT_DIR$/res/layout/list_item.xml" />
         <option value="$PROJECT_DIR$/src/com/alexgames/BabySpeak.java" />
         <option value="$PROJECT_DIR$/src/com/alexgames/BackgroundMusic.java" />
         <option value="$PROJECT_DIR$/res/layout-land/baby_scroll_layout.xml" />
@@ -251,8 +240,9 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/layout/baby_scroll_layout.xml" />
         <option value="$PROJECT_DIR$/src/com/alexgames/BabyScrollItem.java" />
-        <option value="$PROJECT_DIR$/src/com/alexgames/CircularArrayAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/alexgames/BabyScrollItemBuilder.java" />
+        <option value="$PROJECT_DIR$/res/layout/list_item.xml" />
+        <option value="$PROJECT_DIR$/src/com/alexgames/CircularArrayAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/alexgames/BabyScroll.java" />
       </list>
     </option>
@@ -569,7 +559,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.019741837" sideWeight="0.83418804" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.019741837" sideWeight="0.74188036" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -583,7 +573,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21412301" sideWeight="0.74188036" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25811967" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25811967" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Android Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -682,30 +672,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/baby_scroll_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="50" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/list_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="56" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-9/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="272" column="28" selection-start="13132" selection-end="13132" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-9/android.jar!/android/view/LayoutInflater.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="29" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -728,15 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/alexgames/CircularArrayAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alexgames/BabyScrollItemBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
@@ -753,11 +713,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-9/android.jar!/android/view/LayoutInflater.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="29" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/baby_scroll_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="50" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="57" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alexgames/CircularArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="88" selection-start="1506" selection-end="1557" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alexgames/BabyScroll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="20" selection-start="3197" selection-end="3197" vertical-scroll-proportion="1.251948">
+        <state line="46" column="68" selection-start="1532" selection-end="1532" vertical-scroll-proportion="0.4077922">
           <folding>
             <element signature="e#962#978#0" expanded="true" />
+            <element signature="method#TalkItem#0;class#BabyScroll#0" expanded="false" />
           </folding>
         </state>
       </provider>

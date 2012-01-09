@@ -43,8 +43,10 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
                                     int position, long id) {
                 // When clicked do text to speech
                 TalkItem(view);
+
                 // When clicked, show a toast with the TextView text
-                Toast.makeText(getApplicationContext(), ((TextView) view).getText(),
+                View textView = view.findViewById(R.id.txtItem);
+                Toast.makeText(getApplicationContext(), ((TextView) textView).getText(),
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -91,7 +93,8 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
     }
 
     private void TalkItem(View view) {
-        String viewText = ((TextView) view).getText().toString();
+        View textView = (TextView)view.findViewById(R.id.txtItem);
+        String viewText = ((TextView) textView).getText().toString();
 
         String say = viewText;
 

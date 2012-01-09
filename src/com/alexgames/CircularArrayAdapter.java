@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -41,7 +42,7 @@ public class CircularArrayAdapter<T> extends ArrayAdapter
     @Override
     public View getView(int position, View convertView, ViewGroup parent)
     {
-        TextView babyScrollView;
+        LinearLayout babyScrollView;
         BabyScrollItem scrollItem =(BabyScrollItem) getItem(position);
 
         //Inflate the view
@@ -50,10 +51,11 @@ public class CircularArrayAdapter<T> extends ArrayAdapter
             convertView = LayoutInflater.from(adapterContext).inflate(R.layout.list_item, parent, false);
         }
 
-        babyScrollView = (TextView) convertView;
+        babyScrollView = (LinearLayout) convertView;
 
         //Set Text
-        babyScrollView.setText(scrollItem.getItemText());
+        TextView babyScrollTextView =(TextView)babyScrollView.findViewById(R.id.txtItem);
+        babyScrollTextView.setText(scrollItem.getItemText());
 
         //Todo Set Image
         return babyScrollView;
