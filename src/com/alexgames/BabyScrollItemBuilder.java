@@ -2,17 +2,8 @@ package com.alexgames;
 
 import java.util.ArrayList;
 
-/**
- * Created by IntelliJ IDEA.
- * User: Jason
- * Date: 1/8/12
- * Time: 9:12 PM
- * To change this template use File | Settings | File Templates.
- */
 public class BabyScrollItemBuilder
 {
-    private ArrayList<BabyScrollItem> BabyScrollItems;
-
     public ArrayList<BabyScrollItem> GetAlphabetItems() {
 
         ArrayList<BabyScrollItem> result = new ArrayList<BabyScrollItem>();
@@ -22,6 +13,8 @@ public class BabyScrollItemBuilder
             scrollItem.setItemText(item);
             result.add(scrollItem);
         }
+
+        //TODO add image names
 
         return result;
     }
