@@ -50,15 +50,16 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
                 //ImageView image = (ImageView) layout.findViewById(R.id.image);
                 //image.setImageResource(R.drawable.dog);
                 TextView text = (TextView) layout.findViewById(R.id.text);
-                text.setText(((TextView) textView).getText());
+
+                CharSequence charsToShow = ((TextView) textView).getText();
+                text.setText(charsToShow);
 
                 Toast toast = new Toast(getApplicationContext());
                 toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-                toast.setDuration(Toast.LENGTH_LONG);
+                toast.setDuration(Toast.LENGTH_SHORT);
                 toast.setView(layout);
-                toast.show();
 
-                Toast.makeText(getApplicationContext(), ((TextView) textView).getText(),
+                Toast.makeText(getApplicationContext(), GetTalkText(charsToShow.toString()),
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -107,32 +108,68 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
     private void TalkItem(View view) {
         View textView = (TextView)view.findViewById(R.id.txtItem);
         String viewText = ((TextView) textView).getText().toString();
+        talker.speak(viewText + " " + GetTalkText(viewText), TextToSpeech.QUEUE_FLUSH, null);
+    }
 
-        String say = viewText;
+    private String GetTalkText(String viewText)
+    {
+        String result = "";
 
         if (viewText.equals("A")) {
-            say = "AE Alex";
+            result = "Alex";
         } else if (viewText.equals("B")) {
-            say = "B ball";
+            result = "Ball";
         } else if (viewText.equals("C")) {
-            say = "C car";
+            result = "Car";
         } else if (viewText.equals("D")) {
-            say = "d  daddy";
+            result = "Dad";
         } else if (viewText.equals("E")) {
-            say = "e  elephant";
+            result = "Elephant";
         } else if (viewText.equals("F")) {
-            say = "f  firetruck";
+            result = "Firetruck";
         } else if (viewText.equals("G")) {
-            say = "g  grandpa";
+            result = "Grandpa";
+        } else if (viewText.equals("H")) {
+            result = "Happy";
+        } else if (viewText.equals("I")) {
+            result = "Ice cream";
+        } else if (viewText.equals("J")) {
+            result = "Jungle";
+        } else if (viewText.equals("K")) {
+            result = "Koala";
+        } else if (viewText.equals("L")) {
+            result = "Love";
         } else if (viewText.equals("M")) {
-            say = "m mommy";
+            result = "Mom";
+        } else if (viewText.equals("N")) {
+            result = "Nature";
+        } else if (viewText.equals("O")) {
+            result = "Octopus";
+        } else if (viewText.equals("P")) {
+            result = "Penguin";
+        } else if (viewText.equals("Q")) {
+            result = "Queen";
+        } else if (viewText.equals("R")) {
+            result = "Row Boat";
+        } else if (viewText.equals("S")) {
+            result = "Snake";
         } else if (viewText.equals("T")) {
-            say = "t tiger";
+            result = "Tiger";
+        } else if (viewText.equals("U")) {
+            result = "Umbrella";
+        } else if (viewText.equals("V")) {
+            result = "Van";
+        } else if (viewText.equals("W")) {
+            result = "Wombat";
+        } else if (viewText.equals("X")) {
+            result = "Xylophone";
+        } else if (viewText.equals("Y")) {
+            result = "Yellow";
         } else if (viewText.equals("Z")) {
-            say = "z zoo";
+            result = "Zoo";
         }
 
-        talker.speak(say, TextToSpeech.QUEUE_FLUSH, null);
+        return result;
     }
 
     public void onInit(int status) {
