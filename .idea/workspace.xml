@@ -30,7 +30,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/alexgames/BabyScroll.java" line="27" class="com.alexgames.BabyScroll" package="com.alexgames">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/alexgames/BabyScroll.java" line="31" class="com.alexgames.BabyScroll" package="com.alexgames">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -44,19 +44,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/com/alexgames/BabyScrollItemBuilder.java" line="21" class="com.alexgames.BabyScrollItemBuilder" package="com.alexgames">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/alexgames/BabyScroll.java" line="59" class="com.alexgames.BabyScroll$1" package="com.alexgames">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -113,9 +100,9 @@
       <file leaf-file-name="BabyScroll.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/alexgames/BabyScroll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="31" selection-start="2446" selection-end="2446" vertical-scroll-proportion="0.7545692">
+            <state line="62" column="17" selection-start="2189" selection-end="2189" vertical-scroll-proportion="0.5195823">
               <folding>
-                <element signature="e#824#840#0" expanded="true" />
+                <element signature="e#995#1011#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -761,9 +748,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alexgames/BabyScroll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="31" selection-start="2446" selection-end="2446" vertical-scroll-proportion="0.7545692">
+        <state line="62" column="17" selection-start="2189" selection-end="2189" vertical-scroll-proportion="0.5195823">
           <folding>
-            <element signature="e#824#840#0" expanded="true" />
+            <element signature="e#995#1011#0" expanded="true" />
           </folding>
         </state>
       </provider>

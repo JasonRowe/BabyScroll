@@ -13,11 +13,15 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
     TextToSpeech talker;
     MediaPlayer player;
 
-    public static Toast currentToast;
+    private Toast currentToast;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        currentToast = new Toast(getApplicationContext());
+        currentToast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        currentToast.setDuration(Toast.LENGTH_LONG);
 
         GoFullScreen();
 
@@ -57,14 +61,7 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
 
                 toastText.setText(GetTalkText(charsToShow.toString()));
 
-                if (currentToast != null) {
-                    currentToast.cancel();
-                }
-
-                currentToast = new Toast(getApplicationContext());
-
-                currentToast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-                currentToast.setDuration(Toast.LENGTH_LONG);
+                currentToast.cancel();
                 currentToast.setView(toastLayout);
                 currentToast.show();
 
