@@ -13,6 +13,8 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
     TextToSpeech talker;
     MediaPlayer player;
 
+    public static Toast currentToast;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +24,7 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
         talker = new TextToSpeech(this, this);
 
         BabyScrollItemBuilder itemBuilder = new BabyScrollItemBuilder();
-        
+
         ArrayList<BabyScrollItem> items = itemBuilder.GetAlphabetItems();
 
         CircularArrayAdapter<BabyScrollItem> adapter = new CircularArrayAdapter<BabyScrollItem>(this, R.layout.list_item, items);
@@ -36,31 +38,37 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                // When clicked do text to speech
-                TalkItem(view);
 
-                // When clicked, show a toast with the TextView text
                 View textView = view.findViewById(R.id.txtItem);
 
                 LayoutInflater inflater = getLayoutInflater();
-                View layout = inflater.inflate(R.layout.toast_layout,
-                        (ViewGroup) findViewById(R.id.toast_layout_root));
 
-                //TODO put in images
-                //ImageView image = (ImageView) layout.findViewById(R.id.image);
-                //image.setImageResource(R.drawable.dog);
-                TextView text = (TextView) layout.findViewById(R.id.text);
+                View toastLayout = inflater.inflate(R.layout.toast_layout, (ViewGroup) findViewById(R.id.toast_layout_root));
+
+                TextView toastText = (TextView) toastLayout.findViewById(R.id.text);
 
                 CharSequence charsToShow = ((TextView) textView).getText();
-                text.setText(charsToShow);
+                toastText.setText(charsToShow);
 
-                Toast toast = new Toast(getApplicationContext());
-                toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-                toast.setDuration(Toast.LENGTH_SHORT);
-                toast.setView(layout);
+                ImageView imageView = (ImageView) view.findViewById(R.id.imgItem);
 
-                Toast.makeText(getApplicationContext(), GetTalkText(charsToShow.toString()),
-                        Toast.LENGTH_SHORT).show();
+                ImageView image = (ImageView) toastLayout.findViewById(R.id.image);
+                image.setImageDrawable(imageView.getDrawable());
+
+                toastText.setText(GetTalkText(charsToShow.toString()));
+
+                if (currentToast != null) {
+                    currentToast.cancel();
+                }
+
+                currentToast = new Toast(getApplicationContext());
+
+                currentToast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+                currentToast.setDuration(Toast.LENGTH_LONG);
+                currentToast.setView(toastLayout);
+                currentToast.show();
+
+                TalkItem(view);
             }
         });
 
@@ -106,17 +114,16 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
     }
 
     private void TalkItem(View view) {
-        View textView = (TextView)view.findViewById(R.id.txtItem);
+        View textView = view.findViewById(R.id.txtItem);
         String viewText = ((TextView) textView).getText().toString();
         talker.speak(viewText + " " + GetTalkText(viewText), TextToSpeech.QUEUE_FLUSH, null);
     }
 
-    private String GetTalkText(String viewText)
-    {
+    private String GetTalkText(String viewText) {
         String result = "";
 
         if (viewText.equals("A")) {
-            result = "Alex";
+            result = "Apple";
         } else if (viewText.equals("B")) {
             result = "Ball";
         } else if (viewText.equals("C")) {
@@ -150,7 +157,7 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
         } else if (viewText.equals("Q")) {
             result = "Queen";
         } else if (viewText.equals("R")) {
-            result = "Row Boat";
+            result = "Rocket";
         } else if (viewText.equals("S")) {
             result = "Snake";
         } else if (viewText.equals("T")) {
@@ -166,7 +173,7 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
         } else if (viewText.equals("Y")) {
             result = "Yellow";
         } else if (viewText.equals("Z")) {
-            result = "Zoo";
+            result = "Zebra";
         }
 
         return result;
@@ -177,6 +184,11 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
 
     @Override
     public void onDestroy() {
+
+        if (currentToast != null) {
+            currentToast.cancel();
+        }
+
         if (talker != null) {
             talker.stop();
             talker.shutdown();

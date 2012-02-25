@@ -13,14 +13,14 @@ public class BabyScrollItem {
         return this.itemText;
     }
 
-    private String imageName;
+    private int imageResource;
 
-    public void setImageName(String imageName) {
-        this.imageName = imageName;
+    public void setImageResource(int imageResource) {
+        this.imageResource = imageResource;
     }
 
-    public String getImageName() {
-        return this.imageName;
+    public int getImageResource() {
+        return this.imageResource;
     }
 }
 

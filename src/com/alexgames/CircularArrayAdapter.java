@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -56,6 +57,9 @@ public class CircularArrayAdapter<T> extends ArrayAdapter
         //Set Text
         TextView babyScrollTextView =(TextView)babyScrollView.findViewById(R.id.txtItem);
         babyScrollTextView.setText(scrollItem.getItemText());
+
+        ImageView babyScrollImageView =(ImageView)babyScrollView.findViewById(R.id.imgItem);
+        babyScrollImageView.setImageResource(scrollItem.getImageResource());
 
         //Todo Set Image
         return babyScrollView;
