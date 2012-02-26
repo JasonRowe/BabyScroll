@@ -108,10 +108,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BabyScrollItemBuilder.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BabyScrollItemBuilder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/alexgames/BabyScrollItemBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="67" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.5561358">
+            <state line="33" column="67" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="50" selection-start="310" selection-end="310" vertical-scroll-proportion="0.5151515">
               <folding />
             </state>
           </provider>
@@ -141,7 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/example/BabyScroll.java" />
         <option value="$PROJECT_DIR$/src/com/game/BabyScroll.java" />
         <option value="$PROJECT_DIR$/src/com/alexgames/BabyScrollView.java" />
         <option value="$PROJECT_DIR$/src/com/alexgames/BabySpeak.java" />
@@ -157,6 +165,7 @@
         <option value="$PROJECT_DIR$/gen/com/alexgames/R.java" />
         <option value="$PROJECT_DIR$/src/com/alexgames/BabyScroll.java" />
         <option value="$PROJECT_DIR$/src/com/alexgames/BabyScrollItemBuilder.java" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -298,6 +307,7 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -567,11 +577,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-9/android.jar!/android/view/LayoutInflater.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="29" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.076233186" />
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-9/android.jar!/android/os/Looper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="16" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0" />
@@ -648,7 +653,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alexgames/BabyScrollItemBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="67" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.5561358">
+        <state line="33" column="67" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="50" selection-start="310" selection-end="310" vertical-scroll-proportion="0.5151515">
           <folding />
         </state>
       </provider>
