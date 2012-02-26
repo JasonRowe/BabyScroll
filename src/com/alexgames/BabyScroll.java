@@ -126,7 +126,7 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
         } else if (viewText.equals("C")) {
             result = "Car";
         } else if (viewText.equals("D")) {
-            result = "Dad";
+            result = "Doggy";
         } else if (viewText.equals("E")) {
             result = "Elephant";
         } else if (viewText.equals("F")) {

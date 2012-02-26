@@ -29,9 +29,9 @@ public class BabyScrollItemBuilder
 };
 
     static final int[] ImageResources = new int[]{
-            R.drawable.bs_dog, R.drawable.bs_zebra, R.drawable.bs_yellow, R.drawable.bs_xylophone, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog,
+            R.drawable.bs_apple, R.drawable.bs_zebra, R.drawable.bs_yellow, R.drawable.bs_xylophone, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog,
             R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog,
-            R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog
+            R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_car, R.drawable.bs_ball
     };
 
 }
