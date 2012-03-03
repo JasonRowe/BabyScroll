@@ -130,9 +130,9 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
         } else if (viewText.equals("E")) {
             result = "Elephant";
         } else if (viewText.equals("F")) {
-            result = "Firetruck";
+            result = "Fire Truck";
         } else if (viewText.equals("G")) {
-            result = "Grandpa";
+            result = "Grapes";
         } else if (viewText.equals("H")) {
             result = "Happy";
         } else if (viewText.equals("I")) {
@@ -164,7 +164,7 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
         } else if (viewText.equals("V")) {
             result = "Van";
         } else if (viewText.equals("W")) {
-            result = "Wombat";
+            result = "Walrus";
         } else if (viewText.equals("X")) {
             result = "Xylophone";
         } else if (viewText.equals("Y")) {

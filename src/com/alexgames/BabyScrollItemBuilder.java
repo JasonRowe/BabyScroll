@@ -29,9 +29,9 @@ public class BabyScrollItemBuilder
 };
 
     static final int[] ImageResources = new int[]{
-            R.drawable.bs_apple, R.drawable.bs_zebra, R.drawable.bs_yellow, R.drawable.bs_xylophone, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog,
-            R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog,
-            R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_car, R.drawable.bs_ball
+            R.drawable.bs_apple, R.drawable.bs_zebra, R.drawable.bs_yellow, R.drawable.bs_xylophone, R.drawable.bs_walrus, R.drawable.bs_van, R.drawable.bs_umbrella, R.drawable.bs_tiger, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog,
+            R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_dog, R.drawable.bs_grapes, R.drawable.bs_fire_truck,
+            R.drawable.bs_elephant, R.drawable.bs_dog, R.drawable.bs_car, R.drawable.bs_ball
     };
 
 }
