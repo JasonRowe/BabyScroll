@@ -134,7 +134,7 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
         } else if (viewText.equals("G")) {
             result = "Grapes";
         } else if (viewText.equals("H")) {
-            result = "Happy";
+            result = "Hamster";
         } else if (viewText.equals("I")) {
             result = "Ice cream";
         } else if (viewText.equals("J")) {
@@ -144,15 +144,15 @@ public class BabyScroll extends ListActivity implements TextToSpeech.OnInitListe
         } else if (viewText.equals("L")) {
             result = "Love";
         } else if (viewText.equals("M")) {
-            result = "Mom";
+            result = "Mermaid";
         } else if (viewText.equals("N")) {
-            result = "Nature";
+            result = "Noodles";
         } else if (viewText.equals("O")) {
             result = "Octopus";
         } else if (viewText.equals("P")) {
             result = "Penguin";
         } else if (viewText.equals("Q")) {
-            result = "Queen";
+            result = "Question Mark";
         } else if (viewText.equals("R")) {
             result = "Rocket";
         } else if (viewText.equals("S")) {
